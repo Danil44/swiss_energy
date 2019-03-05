@@ -7,6 +7,15 @@
     <meta name="theme-color" content="#F6CE57">
     <link href="static/css/app.css" rel="stylesheet">
     <title>SWISS ENERGY</title>
+    <script>
+        window.onload = function(){
+            setTimeout(function(){
+                document.querySelectorAll('.js-anim-elem').forEach(function(item) {
+                    item.classList.add('active');
+                });
+            },100)
+        }
+    </script>
 </head>
 <body>
 
@@ -65,14 +74,14 @@
         <div class="content">
             <h2 class="title">Де купити</h2>
             <ul class="buy">
-                <li><img src="static/img/buy/anc.jpg" alt=""></li>
-                <li><img src="static/img/buy/koniyka.jpg" alt=""></li>
-                <li><img src="static/img/buy/dobrogo_dnya.jpg" alt=""></li>
-                <li><img src="static/img/buy/medservis.jpg" alt=""></li>
-                <li><img src="static/img/buy/911.jpg" alt=""></li>
-                <li><img src="static/img/buy/podorognic.jpg" alt=""></li>
-                <li><img src="static/img/buy/ne_boley.jpg" alt=""></li>
-                <li><img src="static/img/buy/R.jpg" alt=""></li>
+                <li><a href="/" target="_blank"><img src="static/img/buy/anc.jpg" alt=""></a></li>
+                <li><a href="/" target="_blank"><img src="static/img/buy/koniyka.jpg" alt=""></a></li>
+                <li><a href="/" target="_blank"><img src="static/img/buy/dobrogo_dnya.jpg" alt=""></a></li>
+                <li><a href="/" target="_blank"><img src="static/img/buy/medservis.jpg" alt=""></a></li>
+                <li><a href="/" target="_blank"><img src="static/img/buy/911.jpg" alt=""></a></li>
+                <li><a href="/" target="_blank"><img src="static/img/buy/podorognic.jpg" alt=""></a></li>
+                <li><a href="/" target="_blank"><img src="static/img/buy/ne_boley.jpg" alt=""></a></li>
+                <li><a href="/" target="_blank"><img src="static/img/buy/R.jpg" alt=""></a></li>
             </ul>
         </div>
     </div>

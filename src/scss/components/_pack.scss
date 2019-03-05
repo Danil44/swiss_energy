@@ -81,6 +81,9 @@
 .packs-info{
   .row{
     margin-bottom: 20px;
+    @media (max-width: $breakpoint-mobile){
+      margin-bottom: 10px;
+    }
     &:nth-child(even){
       flex-direction: row-reverse;
       .letter-bg:before{
@@ -95,6 +98,9 @@
         padding: 100px 8%;
         @media (max-width: $breakpoint-small){
           padding: 64px 8%;
+        }
+        @media (max-width: $breakpoint-mobile){
+          padding: 64px 10px;
         }
       }
     }

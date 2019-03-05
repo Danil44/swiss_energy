@@ -13,6 +13,7 @@
 @import 'components/text-block';
 @import 'components/run-string';
 @import 'components/distributor';
+@import 'components/scroll';
 
 *{
   box-sizing: border-box;
@@ -29,6 +30,9 @@ h1{
 
 body{
   padding: 20px;
+  @media (max-width: $breakpoint-tablet){
+    padding: 10px;
+  }
   &:after{
     content: '';
     width: 100%;

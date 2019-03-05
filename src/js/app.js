@@ -38,7 +38,7 @@ $(window).on('load', function () {
     }
     if($('.run-string-left').length){
         $('.run-string-left').marquee({
-            duration: 15000,
+            duration: 30000,
             direction: 'left',
             duplicated: true,
             startVisible: true
@@ -46,7 +46,7 @@ $(window).on('load', function () {
     }
     if($('.run-string-right').length){
         $('.run-string-right').marquee({
-            duration: 15000,
+            duration: 30000,
             direction: 'right',
             duplicated: true,
             startVisible: true

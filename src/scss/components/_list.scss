@@ -32,6 +32,7 @@ ul.marker-list{
   .picture{
     width: 16.5%;
     margin-right: 6%;
+    text-align: center;
     @media (max-width: $breakpoint-mobile){
       width: 100%;
       max-width: 160px;
@@ -52,11 +53,23 @@ ul.marker-list{
 ul.buy{
   display: flex;
   flex-wrap: wrap;
-  border: 3px solid #dee4e7;
+  border: 2px solid #dee4e7;
+
   li{
     width: 25%;
-    max-width: 233px;
-    border: 3px solid #dee4e7;
+    border: 2px solid #dee4e7;
+    transition: filter $anim-speed;
+    overflow: hidden;
+    text-align: center;
+    a{
+      display: block;
+      transition: transform $anim-speed;
+    }
+    &:hover{
+      a{
+        transform: scale(1.1);
+      }
+    }
     @media (max-width: $breakpoint-phone){
       width: 50%;
     }
@@ -65,12 +78,12 @@ ul.buy{
     }
     img{
       width: 100%;
+      max-width: 233px;
     }
   }
 }
 
 ul.address-list{
-  padding-right: 15px;
   margin-bottom: 40px;
   li{
     font: $regular 2rem $font-base;

@@ -7,6 +7,15 @@
     <meta name="theme-color" content="#F6CE57">
     <link href="static/css/app.css" rel="stylesheet">
     <title>SWISS ENERGY</title>
+    <script>
+        window.onload = function(){
+            setTimeout(function(){
+                document.querySelectorAll('.js-anim-elem').forEach(function(item) {
+                    item.classList.add('active');
+                });
+            },100)
+        }
+    </script>
 </head>
 <body>
 
