@@ -1,0 +1,14 @@
+.text,
+.text-block p{
+  font: $regular 2rem $font-base;
+  line-height: 1.6em;
+  strong{
+    font-weight: $bold;
+  }
+  @media (max-width: $breakpoint-small){
+    font-size: 1.28rem;
+  }
+  @media (max-width: $breakpoint-mobile){
+    font-size: 1.2rem;
+  }
+}

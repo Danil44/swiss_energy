@@ -1,0 +1,85 @@
+ul.marker-list{
+  margin-top: 35px;
+  font: $medium 2rem $font-base;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: square;
+  list-style-position: inside;
+  @media (max-width: $breakpoint-small){
+    font-size: 1.28rem;
+  }
+  li{
+    width: 50%;
+    margin-bottom: 10px;
+    @media (max-width: $breakpoint-mobile){
+      width: 100%;
+    }
+  }
+}
+
+.image-list{
+  li{
+    display: flex;
+    @media (max-width: $breakpoint-mobile){
+      flex-direction: column;
+      margin-bottom: 25px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+  }
+  .picture{
+    width: 16.5%;
+    margin-right: 6%;
+    @media (max-width: $breakpoint-mobile){
+      width: 100%;
+      max-width: 160px;
+      margin: 0 auto 15px;
+    }
+  }
+  .description{
+    width: 77.5%;
+    @media (max-width: $breakpoint-mobile){
+      width: 100%;
+    }
+    .title{
+      font-size: 2.4rem;
+    }
+  }
+}
+
+ul.buy{
+  display: flex;
+  flex-wrap: wrap;
+  border: 3px solid #dee4e7;
+  li{
+    width: 25%;
+    max-width: 233px;
+    border: 3px solid #dee4e7;
+    @media (max-width: $breakpoint-phone){
+      width: 50%;
+    }
+    @media (max-width: $breakpoint-small-mb-xxs){
+      width: 100%;
+    }
+    img{
+      width: 100%;
+    }
+  }
+}
+
+ul.address-list{
+  padding-right: 15px;
+  margin-bottom: 40px;
+  li{
+    font: $regular 2rem $font-base;
+    margin-bottom: 10px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+    a{
+      text-decoration: underline;
+    }
+  }
+}

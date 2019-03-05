@@ -1,0 +1,39 @@
+//*=============*//
+//*   COLORS    *//
+//*=============*//
+
+$blue: #314b66;
+
+//*=============*//
+//*  FONT NAME  *//
+//*=============*//
+
+$font-base:      "Roboto";
+$font-condensed: "Roboto Condensed";
+$font-slab:      "Roboto Slab";
+
+//*=============*//
+//* FONT WEIGHT *//
+//*=============*//
+
+$regular: 400;
+$medium:  500;
+$bold:    700;
+
+$anim-speed: .4s;
+
+
+//* ============= *//
+//*  BREAKPOINTS  *//
+//* ==============*//
+
+$breakpoint-big:          1800px;
+$breakpoint-middle:       1500px;
+$breakpoint-small:        1300px;
+$breakpoint-tiny:         1100px;
+$breakpoint-tablet:       950px;
+$breakpoint-mobile:       767px;
+$breakpoint-phone:        570px;
+$breakpoint-small-mb-xs:  400px;
+$breakpoint-small-mb-xxs: 375px;
+$breakpoint-height:       650px;

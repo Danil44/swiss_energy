@@ -1,0 +1,23 @@
+ul.socials{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  li{
+    margin-right: 15px;
+    width: 68px;
+    @media (max-width: $breakpoint-small){
+      width: 50px;
+    }
+    a{
+      border-radius: 40%;
+      display: inline-block;
+      overflow: hidden;
+      img{
+        width: 100%;
+      }
+    }
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+}

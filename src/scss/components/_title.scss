@@ -1,0 +1,64 @@
+.title{
+  font: $bold 14rem $font-slab;
+  line-height: 0.8em;
+  margin-bottom: 40px;
+  @media (max-width: $breakpoint-small){
+    font-size: 9rem;
+  }
+  @media (max-width: $breakpoint-mobile){
+    font-size: 5rem;
+    line-height: 1.2em;
+  }
+  @media (max-width: $breakpoint-small-mb-xs){
+    font-size: 4rem;
+  }
+  &-little{
+    font-size: 10.9rem;
+    margin-bottom: 45px;
+    @media (max-width: $breakpoint-small){
+      font-size: 7rem;
+    }
+    @media (max-width: $breakpoint-mobile){
+      font-size: 3.9rem;
+      margin-bottom: 30px;
+    }
+  }
+  &-up{
+    font-family: $font-condensed;
+    font-size: 2rem;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    @media (max-width: $breakpoint-small){
+      font-size: 1.28rem;
+    }
+    @media (max-width: $breakpoint-mobile){
+      font-size: 1.2rem;
+      margin-bottom: 50px;
+      letter-spacing: 3px;
+    }
+    @media (max-width: $breakpoint-small-mb-xs){
+      letter-spacing: 2px;
+    }
+  }
+  &-small{
+    font-size: 4.4rem;
+    @media (max-width: $breakpoint-small){
+      font-size: 2.816rem;
+    }
+    @media (max-width: $breakpoint-mobile){
+      font-size: 1.6rem;
+    }
+  }
+  &-tiny{
+    font-size: 3rem;
+    line-height: 1.2em;
+    @media (max-width: $breakpoint-small){
+      font-size: 1.92rem;
+    }
+    @media (max-width: $breakpoint-mobile){
+      font-size: 1.1rem;
+      margin-bottom: 25px;
+    }
+  }
+}

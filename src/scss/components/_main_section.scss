@@ -1,0 +1,153 @@
+.main_section{
+  position: relative;
+  border: 20px solid #ffffff;
+  min-height: calc( 100vh - 40px );
+  &.index{
+    display: flex;
+    flex-direction: column;
+  }
+  @media (max-width: $breakpoint-mobile){
+    margin-bottom: 20px;
+  }
+  .slogan{
+    position: absolute;
+    width: 90%;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    img{
+      width: 100%;
+    }
+    &-white{
+      padding: 0 20px;
+      margin: 20px 0;
+    }
+  }
+  .items{
+    position: relative;
+    z-index: 10;
+    ul{
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      margin: 0 auto;
+      width: 75%;
+      position: relative;
+      .cloud-bg{
+        position: absolute!important;
+        z-index: -1;
+        width: 123%;
+        animation: none;
+        bottom: -56%!important;
+        top: auto!important;
+        left: 50%!important;
+        transform: translate(-50%, 0)!important;
+      }
+      li{
+        width: 15%;
+        position: relative!important;
+        &.ball{
+          width: 31.4%;
+        }
+        @for $i from 1 through 5 {
+          &:nth-child(#{$i}){
+            //animation: in-eir-#{$i} 15s ease-in-out infinite;
+          }
+        }
+        img{
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+//@keyframes in-eir-1 {
+//  0%{
+//    transform: translate(7px,8px);
+//  }
+//
+//  16%{
+//    transform: translate(2px,2px);
+//  }
+//
+//  32%{
+//    transform: translate(-6px,-2px);
+//  }
+//
+//  48%{
+//    transform: translate(0px,0px);
+//  }
+//
+//  64%{
+//    transform: translate(5px,5px);
+//  }
+//
+//  80%{
+//    transform: translate(6px,6px);
+//  }
+//
+//  100%{
+//    transform: translate(7px,8px);
+//  }
+//}
+//
+//@keyframes in-eir-2 {
+//  0%{
+//    transform: translate(-7px,-8px);
+//  }
+//
+//  16%{
+//    transform: translate(-2px,-2px);
+//  }
+//
+//  32%{
+//    transform: translate(6px,2px);
+//  }
+//
+//  48%{
+//    transform: translate(-1px,-2px);
+//  }
+//
+//  64%{
+//    transform: translate(-5px,-5px);
+//  }
+//
+//  80%{
+//    transform: translate(-6px,-6px);
+//  }
+//
+//  100%{
+//    transform: translate(-7px,-8px);
+//  }
+//}
+//
+//@keyframes in-eir-1 {
+//  0%{
+//    transform: translate(7px,8px);
+//  }
+//
+//  16%{
+//    transform: translate(2px,2px);
+//  }
+//
+//  32%{
+//    transform: translate(-6px,-2px);
+//  }
+//
+//  48%{
+//    transform: translate(0px,0px);
+//  }
+//
+//  64%{
+//    transform: translate(5px,5px);
+//  }
+//
+//  80%{
+//    transform: translate(6px,6px);
+//  }
+//
+//  100%{
+//    transform: translate(7px,8px);
+//  }
+//}

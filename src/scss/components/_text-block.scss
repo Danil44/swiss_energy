@@ -1,0 +1,124 @@
+.text-block{
+  width: 66.66%;
+  background: #fff;
+  margin: 0 auto;
+  position: relative;
+  @media (max-width: $breakpoint-small){
+    width: 80%;
+  }
+  @media (max-width: $breakpoint-tablet){
+    width: 90%;
+  }
+  @media (max-width: $breakpoint-mobile){
+    width: 100%;
+    margin-top: -3.5%;
+  }
+  .back{
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    padding: 5px;
+    font: $regular 1.5rem $font-base;
+    color: $blue;
+    background: #fff;
+    display: inline-block;
+    z-index: 99;
+    @media (max-width: $breakpoint-mobile){
+      top: 20px;
+    }
+    &:before{
+      content: '';
+      display: inline-block;
+      width: 7px;
+      height: 12px;
+      background: url(../img/back_arrow.png) center no-repeat;
+      background-size: contain;
+      margin-right: 6px;
+    }
+  }
+  .content{
+    padding: 74px 11.3% 25px;
+    max-height: 75vh;
+    overflow: auto;
+    position: relative;
+    margin-bottom: 50px;
+    @media (max-width: $breakpoint-mobile){
+      padding: 50px 20px;
+      margin-bottom: 0;
+    }
+    .title{
+      font-size: 4.5rem;
+      margin-bottom: 32px;
+      line-height: 1.1em;
+      @media (max-width: $breakpoint-small){
+        font-size: 3rem;
+        margin-bottom: 20px;
+      }
+      @media (max-width: $breakpoint-mobile){
+        font-size: 2.4rem;
+      }
+    }
+    .separation-line{
+      margin: 0 0 53px;
+      @media (max-width: $breakpoint-small){
+        margin: 0 0 40px;
+      }
+    }
+    .line{
+      height: 1px;
+      width: 100%;
+      background: #dee4e7;
+      margin: 61px 0;
+      @media (max-width: $breakpoint-small){
+        margin: 45px 0;
+      }
+    }
+    p{
+      margin-bottom: 35px;
+      @media (max-width: $breakpoint-small){
+        margin-bottom: 20px;
+      }
+    }
+    .decor-top{
+      top: 5px;
+      right: 5px;
+      position: absolute;
+      width: 38%;
+    }
+    .decor-bottom{
+      bottom: 5px;
+      left: 5px;
+      position: absolute;
+      width: 38%;
+    }
+    .sub-title,
+    .description .title{
+        font-size: 2.4rem;
+        margin-bottom: 20px;
+        margin-top: 5px;
+        @media (max-width: $breakpoint-small){
+          margin-bottom: 15px;
+          font-size: 1.8rem;
+          margin-top: 0;
+        }
+    }
+    .sub-title{
+      font-family: $font-slab;
+      font-weight: $bold;
+      text-transform: none;
+      margin-bottom: 53px;
+    }
+    .text-img{
+      &>*{
+        display: inline-block;
+        width: 49%;
+      }
+      p{
+        padding-right: 10px;
+      }
+      img{
+        margin-left: 10px;
+      }
+    }
+  }
+}
