@@ -7,7 +7,8 @@ let nav           = document.querySelector('nav'),
     open_nav_btn  = document.querySelector('.open-nav'),
     close_nav_btn = document.querySelector('.close-nav'),
     slider_prev   = document.querySelector('.js-slider-prev'),
-    slider_next   = document.querySelector('.js-slider-next');
+    slider_next   = document.querySelector('.js-slider-next'),
+    more          = document.querySelector('.more');
 
 if(document.getElementById('parallax')){
     let scene = document.getElementById('parallax'),
@@ -52,8 +53,30 @@ $(window).on('load', function () {
             startVisible: true
         });
     }
-
 });
+
+if(more){
+
+    let flag = true,
+        text_cont = document.querySelector('.hidden-text'),
+        text = more.querySelector('span');
+
+    more.addEventListener("click", show_info);
+
+
+    function show_info(){
+        if(flag){
+            text_cont.classList.add('open');
+            more.classList.add('open');
+            text.innerText = 'Приховати';
+        }else{
+            text_cont.classList.remove('open');
+            more.classList.remove('open');
+            text.innerText = 'Показати більше';
+        }
+        flag = !flag;
+    }
+}
 
 if(open_nav_btn) open_nav_btn.addEventListener("click", () => {nav.classList.add('open')});
 if(close_nav_btn) close_nav_btn.addEventListener("click", () => {nav.classList.remove('open')});

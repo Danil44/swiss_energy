@@ -1,0 +1,107 @@
+.product{
+  margin-bottom: 20px;
+  &-photo{
+    width: 25%;
+    text-align: center;
+    position: relative;
+    .prod_cloud{
+      position: absolute;
+      bottom: -33%;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: -1;
+      width: 192%;
+      max-width: none;
+    }
+  }
+  .run-string{
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    z-index: -1;
+    img{
+      width: 300px;
+      margin-right: 50px;
+    }
+  }
+  &-name-bg{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    width: calc( 100% - 40px );
+  }
+  &-info{
+    background: #FFFFFF;
+    position: relative;
+    z-index: 99;
+    padding: 85px 8.2% 170px;
+    h1{
+      text-transform: none;
+      margin-bottom: 125px;
+    }
+    h2{
+      height: 52px;
+    }
+  }
+  &-text{
+    display: flex;
+    flex-wrap: wrap;
+    .description{
+      position: relative;
+      width: 50%;
+      margin-right: 8%;
+      display: flex;
+      flex-direction: column;
+    }
+    .elem-list-container{
+      width: 42%;
+    }
+    .separation-line{
+      margin-top: 0;
+    }
+    .hidden-text{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      &.open{
+        position: relative;
+      }
+      &-container{
+        position: relative;
+        flex-grow: 1;
+        overflow: hidden;
+      }
+    }
+    .text{
+      margin-bottom: 40px;
+      line-height: 1.8em;
+    }
+    ul.marker-list{
+      li{
+        width: 100%;
+      }
+    }
+  }
+}
+
+.more{
+  font: $bold 2.5rem $font-slab;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  transform: translateY(100%);
+  cursor: pointer;
+  &.open{
+    img{
+      transform: rotateX(180deg);
+    }
+  }
+  img{
+    margin-left: 7px;
+    width: 11px;
+    vertical-align: middle;
+  }
+}

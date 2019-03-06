@@ -96,3 +96,60 @@ ul.address-list{
     }
   }
 }
+.elem-list{
+  font: $regular 1.8rem $font-base;
+  line-height: 1.6em;
+  li{
+    display: flex;
+    margin-bottom: 5px;
+    .dots{
+      margin: 0 33px;
+      flex-grow: 1;
+      border-top: 3px dotted #ABBEC7;
+      height: 0;
+      align-self: center;
+    }
+  }
+  strong{
+    font-weight: $bold;
+  }
+  @media (max-width: $breakpoint-small){
+    font-size: 1.28rem;
+  }
+  @media (max-width: $breakpoint-mobile){
+    font-size: 1.2rem;
+  }
+}
+
+.product-list{
+  position: relative;
+  z-index: 9;
+  display: flex;
+  margin: 20px -10px;
+  li{
+    padding: 48px 10px;
+    width: 25%;
+    margin: 0 10px;
+    background: #FFFFFF;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .desc{
+      text-transform: uppercase;
+      font: $bold 1.2rem $font-condensed;
+      letter-spacing: 2px;
+      margin-bottom: 6px;
+    }
+    .name{
+      font: $black 2.9rem $font-base;
+      text-transform: uppercase;
+      margin-bottom: 35px;
+      flex-grow: 1;
+    }
+    img{
+      width: 55%;
+      margin-bottom: 38px;
+    }
+  }
+}

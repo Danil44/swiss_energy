@@ -14,7 +14,6 @@ nav{
   justify-content: center;
   transform: scale(0);
   transform-origin: 50% 50%;
-  //transform-origin: 100% 0%;
   transition: transform $anim-speed;
   @media (max-width: $breakpoint-small-mb-xs){
     align-items: flex-start;
