@@ -13,6 +13,10 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    header{
+      position: absolute;
+      z-index: 99;
+    }
   }
   .slogan{
     position: absolute;
@@ -32,13 +36,14 @@
       padding: 0 20px;
       margin: 20px 0;
       @media (max-width: $breakpoint-tablet){
-        padding: 0 10px;
+        padding: 0 20px;
       }
     }
   }
   .items{
     position: relative;
     z-index: 10;
+    width: 94%;
     ul{
       display: flex;
       align-items: flex-end;

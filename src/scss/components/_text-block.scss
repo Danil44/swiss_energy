@@ -1,7 +1,7 @@
 .text-block{
   width: 66.66%;
   background: #fff;
-  margin: 117px auto 20px;
+  margin: -20px auto 20px;
   position: relative;
   @media (max-width: $breakpoint-small){
     width: 80%;
@@ -11,8 +11,8 @@
   }
   @media (max-width: $breakpoint-mobile){
     width: calc( 100% - 20px );
-    margin-top: 0;
     margin-bottom: 10px;
+    margin-top: 0;
   }
   .back{
     position: absolute;
@@ -30,11 +30,11 @@
       }
     }
     @media (max-width: $breakpoint-small){
-      left: 10px;
+      left: 20px;
     }
     @media (max-width: $breakpoint-mobile){
       top: 10px;
-      left: 5px;
+      left: 15px;
     }
     &:before{
       content: '';
@@ -53,7 +53,7 @@
     overflow: auto;
     position: relative;
     @media (max-width: $breakpoint-mobile){
-      padding: 50px 10px 10px;
+      padding: 50px 20px 10px;
       margin-bottom: 0;
       max-height: none;
     }
@@ -120,6 +120,9 @@
       margin-bottom: 53px;
     }
     .text-img{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
       &>*{
         display: inline-block;
         width: 49%;
