@@ -1,4 +1,4 @@
-.btn{
+.btn {
   cursor: pointer;
   position: relative;
   display: inline-block;
@@ -13,113 +13,121 @@
   color: #fff;
   padding: 30px 115px;
   border-radius: 121px;
-  &-container{
+  &-container {
     text-align: center;
   }
-  @media (max-width: $breakpoint-small){
+  @media (max-width: $breakpoint-small) {
     font-size: 2.24rem;
     padding: 20px 78px;
     border-width: 5px;
   }
-  @media (max-width: $breakpoint-mobile){
+  @media (max-width: $breakpoint-mobile) {
     font-size: 1.8rem;
     padding: 13px 45px;
   }
-  span{
+  span {
     color: #fff;
     line-height: 0.8em;
     display: inline-block;
     transition: color $anim-speed;
-    &:after{
-      content: '';
+    &:after {
+      content: "";
       display: inline-block;
       margin-left: 26px;
       height: 23px;
       width: 18px;
       background: url(../img/white_arrow.png) center no-repeat;
       background-size: contain;
-      @media (max-width: $breakpoint-small){
+      @media (max-width: $breakpoint-small) {
         height: 16px;
         margin-left: 25px;
       }
-      @media (max-width: $breakpoint-mobile){
+      @media (max-width: $breakpoint-mobile) {
         height: 13px;
         width: 9px;
         margin-left: 15px;
       }
     }
   }
-  &-white{
+  &-white {
     background: #fff;
     padding: 20px 98px;
     line-height: 0em;
     z-index: 10;
-    @media (max-width: $breakpoint-small){
+    @media (max-width: $breakpoint-small) {
       padding: 15px 60px;
       border-width: 3px;
       border-color: $blue;
     }
-    span{
+    span {
       color: $blue;
       font-size: 2rem;
-      @media (max-width: $breakpoint-small){
+      @media (max-width: $breakpoint-small) {
         font-size: 1.28rem;
       }
-      &:after{
+      &:after {
         margin-left: 15px;
         width: 9px;
         height: 17px;
         background-image: url(../img/blue_arrow.png);
-        @media (max-width: $breakpoint-small){
+        @media (max-width: $breakpoint-small) {
           height: 10px;
         }
       }
     }
   }
-  &-gray{
+  &-gray {
     background: #fff;
     padding: 15px 60px;
     z-index: 10;
     border-color: #314b66;
     border-width: 2px;
     line-height: 0;
-    @media (max-width: $breakpoint-small){
+
+    &--company {
+      width: 40%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    @media (max-width: $breakpoint-small) {
       padding: 15px 60px;
     }
-    span{
+    span {
       color: $blue;
       font-size: 1.6rem;
-      @media (max-width: $breakpoint-small){
+      @media (max-width: $breakpoint-small) {
         font-size: 1.28rem;
       }
-      &:after{
+      &:after {
         margin-left: 15px;
         width: 7px;
         height: 12px;
         background-image: url(../img/blue_arrow.png);
-        @media (max-width: $breakpoint-small){
+        @media (max-width: $breakpoint-small) {
           height: 10px;
         }
       }
     }
   }
   &-white,
-  &-gray{
-    &:hover{
+  &-gray {
+    &:hover {
       background: $blue;
       border-color: $blue;
-      span{
+      span {
         color: #fff;
-        &:after{
+        &:after {
           background-image: url(../img/white_arrow.png);
         }
       }
     }
   }
-  &-balloon{
-    &:after{
+  &-balloon {
+    &:after {
       pointer-events: none;
-      content: '';
+      content: "";
       position: absolute;
       bottom: 20%;
       left: -7.1%;
@@ -133,13 +141,13 @@
   }
 }
 
-.big-btn-container{
+.big-btn-container {
   margin: 155px 0;
   text-align: center;
-  @media (max-width: $breakpoint-small){
+  @media (max-width: $breakpoint-small) {
     margin: 100px 0;
   }
-  @media (max-width: $breakpoint-mobile){
+  @media (max-width: $breakpoint-mobile) {
     margin: 70px 0;
   }
 }

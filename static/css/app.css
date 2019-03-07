@@ -88,7 +88,7 @@ blockquote, q {
     -o-transition: color 0.4s;
     transition: color 0.4s; }
     .btn span:after {
-      content: '';
+      content: "";
       display: inline-block;
       margin-left: 26px;
       height: 23px;
@@ -135,6 +135,17 @@ blockquote, q {
     border-color: #314b66;
     border-width: 2px;
     line-height: 0; }
+    .btn-gray--company {
+      width: 40%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
     @media (max-width: 1300px) {
       .btn-gray {
         padding: 15px 60px; } }
@@ -161,7 +172,7 @@ blockquote, q {
         background-image: url(../img/white_arrow.png); }
   .btn-balloon:after {
     pointer-events: none;
-    content: '';
+    content: "";
     position: absolute;
     bottom: 20%;
     left: -7.1%;
@@ -673,7 +684,8 @@ nav {
   nav.open {
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
-    transform: scale(1); }
+    transform: scale(1);
+    padding: 2em; }
   nav .close-nav {
     cursor: pointer;
     position: absolute;
@@ -689,7 +701,7 @@ nav {
     margin-bottom: 95px; }
     @media (max-width: 1300px) {
       nav ul.nav-list {
-        margin-bottom: 40px; } }
+        margin-bottom: 8em; } }
     nav ul.nav-list li {
       margin-bottom: 60px;
       position: relative; }
@@ -775,7 +787,7 @@ nav {
       transition: transform 0.4s;
       transition: transform 0.4s, -webkit-transform 0.4s; }
   .text-block .content {
-    padding: 45px 11.3% 15px;
+    padding: 45px 11.3% 45px;
     max-height: 70vh;
     overflow: auto;
     position: relative; }
@@ -1126,7 +1138,7 @@ body {
     body {
       padding: 10px; } }
   body .parallax-bg {
-    content: '';
+    content: "";
     width: 100%;
     height: 100%;
     display: block;
@@ -1262,7 +1274,7 @@ img {
       width: 100%;
       max-width: 74px; }
   .slider-container .cloud-bg {
-    width: calc( 100% + 40px);
+    width: calc(100% + 40px);
     position: absolute;
     top: 64%;
     left: -20px;
@@ -1356,7 +1368,7 @@ a {
           position: relative; } }
   .main_section .slogan {
     position: absolute;
-    width: 90%;
+    width: 85%;
     top: 21.5%;
     left: 50%;
     -webkit-transform: translateX(-50%);
@@ -1390,7 +1402,7 @@ a {
       -ms-flex-pack: justify;
       justify-content: space-between;
       margin: 0 auto;
-      width: 75%;
+      width: 97%;
       position: relative; }
       .main_section .items ul .cloud-bg {
         position: absolute !important;
@@ -1422,7 +1434,7 @@ a {
         width: 15%;
         position: relative !important; }
         .main_section .items ul li.ball {
-          width: 31.4%; }
+          width: 28.4%; }
           .main_section .items ul li.ball.active img {
             -webkit-transform: scale(1);
             -ms-transform: scale(1);

@@ -1,42 +1,42 @@
-@import 'components/reset';
-@import 'components/variables';
-@import 'components/fonts';
-@import 'components/btn';
-@import 'components/title';
-@import 'components/text';
-@import 'components/white-block';
-@import 'components/pack';
-@import 'components/list';
-@import 'components/footer';
-@import 'components/socials';
-@import 'components/nav';
-@import 'components/text-block';
-@import 'components/run-string';
-@import 'components/distributor';
-@import 'components/scroll';
-@import 'components/product';
+@import "components/reset";
+@import "components/variables";
+@import "components/fonts";
+@import "components/btn";
+@import "components/title";
+@import "components/text";
+@import "components/white-block";
+@import "components/pack";
+@import "components/list";
+@import "components/footer";
+@import "components/socials";
+@import "components/nav";
+@import "components/text-block";
+@import "components/run-string";
+@import "components/distributor";
+@import "components/scroll";
+@import "components/product";
 
-*{
+* {
   box-sizing: border-box;
   color: $blue;
 }
 
-h1{
+h1 {
   font: $medium 3rem $font-base;
   text-transform: uppercase;
-  @media (max-width: $breakpoint-tiny){
+  @media (max-width: $breakpoint-tiny) {
     font-size: 1.92rem;
   }
 }
 
-body{
+body {
   overflow-x: hidden;
   padding: 20px;
-  @media (max-width: $breakpoint-tablet){
+  @media (max-width: $breakpoint-tablet) {
     padding: 10px;
   }
-  .parallax-bg{
-    content: '';
+  .parallax-bg {
+    content: "";
     width: 100%;
     height: 100%;
     display: block;
@@ -46,43 +46,42 @@ body{
     background: url(../img/main_bg.jpg) no-repeat center bottom;
     background-size: cover;
   }
-  section{
+  section {
     position: relative;
     z-index: 10;
   }
 }
 
-
-.separation-line{
+.separation-line {
   margin: 45px 0;
   height: 3px;
   width: 100%;
   background: #dee4e7;
-  @media (max-width: $breakpoint-mobile){
+  @media (max-width: $breakpoint-mobile) {
     margin: 25px 0;
   }
 }
 
-.row{
+.row {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  @media (max-width: $breakpoint-mobile){
+  @media (max-width: $breakpoint-mobile) {
     background: #fff;
   }
 }
 
-.kapsula{
+.kapsula {
   width: 11.9%;
   position: absolute;
   top: 50%;
   right: 0;
   transform: translate(50%, -50%);
-  img{
+  img {
     width: 100%;
   }
-  .wave{
+  .wave {
     box-sizing: content-box;
     padding: 25px;
     position: absolute;
@@ -94,94 +93,94 @@ body{
     border: 5px solid #fff;
     border-radius: 200px;
     animation: breath 1.5s ease both infinite;
-    &-2{
+    &-2 {
       padding: 55px;
       //border-radius: 127px;
-      border-color: rgba( 255, 255, 255, .45);
+      border-color: rgba(255, 255, 255, 0.45);
       animation-delay: 0.335s;
     }
-    &-3{
+    &-3 {
       padding: 85px;
       //border-radius: 148px;
-      border-color: rgba( 255, 255, 255, .18);
+      border-color: rgba(255, 255, 255, 0.18);
       animation-delay: 0.75s;
     }
   }
 }
 
-.beautiful-img{
+.beautiful-img {
   width: 25%;
   text-align: right;
-  img{
+  img {
     width: 36%;
     margin-right: 9%;
   }
 }
 
-@keyframes breath{
-  0%{
+@keyframes breath {
+  0% {
     opacity: 0.3;
   }
-  50%{
+  50% {
     opacity: 1;
   }
-  100%{
+  100% {
     opacity: 0.3;
   }
 }
 
-img{
+img {
   max-width: 100%;
 }
 
-.mobile{
-  @media (min-width: $breakpoint-mobile+1){
-    display: none!important;
+.mobile {
+  @media (min-width: $breakpoint-mobile+1) {
+    display: none !important;
   }
 }
 
-.desktop{
-  @media (max-width: $breakpoint-mobile){
-    display: none!important;
+.desktop {
+  @media (max-width: $breakpoint-mobile) {
+    display: none !important;
   }
 }
 
-#slider{
-  li{
+#slider {
+  li {
     text-align: center;
-    img{
+    img {
       max-width: 60%;
     }
   }
 }
 
-.slider{
-  &-container{
+.slider {
+  &-container {
     flex-grow: 1;
     display: flex;
     align-items: center;
     position: relative;
     margin-bottom: 40px;
-    span{
+    span {
       display: block;
       cursor: pointer;
       width: 18%;
       padding: 15px;
       pointer-events: auto;
-      img{
+      img {
         width: 100%;
         max-width: 74px;
       }
     }
-    .cloud-bg{
-      width: calc( 100% + 40px);
+    .cloud-bg {
+      width: calc(100% + 40px);
       position: absolute;
       top: 64%;
       left: -20px;
       z-index: -1;
     }
   }
-  &-control{
+  &-control {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -192,29 +191,29 @@ img{
     transform: translateY(-50%);
     width: 100%;
   }
-  &-next{
+  &-next {
     transform: rotate(180deg);
   }
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-.js-hidden{
+.js-hidden {
   opacity: 0;
   transition: opacity 1s, transform 1s;
 }
 
-.right-shift{
+.right-shift {
   transform: translateX(50%);
 }
 
-.left-shift{
+.left-shift {
   transform: translateX(-50%);
 }
 
-.js-hidden.show{
+.js-hidden.show {
   opacity: 1;
   transform: translate(0);
 }
