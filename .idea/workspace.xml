@@ -6,12 +6,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/gen/global.html" afterPath="$PROJECT_DIR$/docs/gen/global.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/gen/index.html" afterPath="$PROJECT_DIR$/docs/gen/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/gen/quicksearch.html" afterPath="$PROJECT_DIR$/docs/gen/quicksearch.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/html/index.html" afterPath="$PROJECT_DIR$/src/html/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/scss/components/_main_section.scss" afterPath="$PROJECT_DIR$/src/scss/components/_main_section.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/scss/components/_text-block.scss" afterPath="$PROJECT_DIR$/src/scss/components/_text-block.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/app.css" afterPath="$PROJECT_DIR$/static/css/app.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/app.min.css" afterPath="$PROJECT_DIR$/static/css/app.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/app.js" afterPath="$PROJECT_DIR$/src/js/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/app.js" afterPath="$PROJECT_DIR$/static/js/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/app.min.js" afterPath="$PROJECT_DIR$/static/js/app.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/jquery-global.js" afterPath="$PROJECT_DIR$/static/js/jquery-global.js" />
@@ -79,16 +74,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_header.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/scss/components/_header.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="top_html.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/html/components/top_html.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -129,11 +114,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_text-block.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_text-block.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/scss/components/_text-block.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.29249617">
+            <state vertical-scroll-proportion="-12.548388">
               <caret line="55" column="27" selection-start-line="55" selection-start-column="27" selection-end-line="55" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/js/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.31921825">
+              <caret line="80" column="96" selection-start-line="80" selection-start-column="96" selection-end-line="80" selection-end-column="96" />
               <folding />
             </state>
           </provider>
@@ -162,7 +157,6 @@
         <option value="$PROJECT_DIR$/src/scss/components/_variables.scss" />
         <option value="$PROJECT_DIR$/src/scss/components/_list.scss" />
         <option value="$PROJECT_DIR$/src/html/components/top_html.html" />
-        <option value="$PROJECT_DIR$/src/js/app.js" />
         <option value="$PROJECT_DIR$/src/scss/components/_pack.scss" />
         <option value="$PROJECT_DIR$/src/scss/_commons.scss" />
         <option value="$PROJECT_DIR$/src/html/product.html" />
@@ -173,6 +167,7 @@
         <option value="$PROJECT_DIR$/src/html/index.html" />
         <option value="$PROJECT_DIR$/src/scss/components/_main_section.scss" />
         <option value="$PROJECT_DIR$/src/scss/components/_text-block.scss" />
+        <option value="$PROJECT_DIR$/src/js/app.js" />
       </list>
     </option>
   </component>
@@ -710,13 +705,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.0">
-          <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/scss/components/_variables.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.32320777">
@@ -820,8 +808,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/scss/components/_text-block.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29249617">
+        <state vertical-scroll-proportion="-12.548388">
           <caret line="55" column="27" selection-start-line="55" selection-start-column="27" selection-end-line="55" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31921825">
+          <caret line="80" column="96" selection-start-line="80" selection-start-column="96" selection-end-line="80" selection-end-column="96" />
           <folding />
         </state>
       </provider>
