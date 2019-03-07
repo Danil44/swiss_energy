@@ -982,7 +982,7 @@ nav {
       transform: translateX(-50%);
       z-index: -1;
       width: 192%;
-      max-width: none; }
+      max-width: 95vw; }
   .product .run-string {
     width: 100%;
     position: absolute;
