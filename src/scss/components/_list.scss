@@ -96,6 +96,7 @@ ul.address-list{
     }
   }
 }
+
 .elem-list{
   font: $regular 1.8rem $font-base;
   line-height: 1.6em;
@@ -125,16 +126,40 @@ ul.address-list{
   position: relative;
   z-index: 9;
   display: flex;
+  flex-wrap: wrap;
   margin: 20px -10px;
+  @media (max-width: $breakpoint-tiny){
+    margin-bottom: 0;
+  }
+  @media (max-width: $breakpoint-tablet){
+    margin: 10px -5px 0;
+  }
   li{
-    padding: 48px 10px;
     width: 25%;
-    margin: 0 10px;
-    background: #FFFFFF;
-    text-align: center;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    .content{
+      width: 100%;
+      padding: 48px 10px;
+      margin: 0 10px;
+      background: #FFFFFF;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @media (max-width: $breakpoint-tablet){
+        margin: 0 5px;
+      }
+    }
+    @media (max-width: $breakpoint-tiny){
+      width: 50%;
+      margin-bottom: 20px;
+    }
+    @media (max-width: $breakpoint-tablet){
+      margin-bottom: 10px;
+    }
+    @media (max-width: $breakpoint-phone){
+      width: 100%;
+    }
     .desc{
       text-transform: uppercase;
       font: $bold 1.2rem $font-condensed;

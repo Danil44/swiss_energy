@@ -10,11 +10,13 @@
     <script>
         window.onload = function(){
             setTimeout(function(){
-                document.querySelectorAll('.js-anim-elem').forEach(function(item) {
-                    item.classList.add('active');
-                });
+                var elems = document.querySelectorAll('.js-anim-elem');
+                for(var i = 0;i < elems.length; i++){
+                    elems[i].classList.add('active');
+                }
             },100)
         }
     </script>
 </head>
 <body>
+<div class="parallax-bg"></div>

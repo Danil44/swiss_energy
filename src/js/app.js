@@ -58,11 +58,10 @@ $(window).on('load', function () {
 if(more){
 
     let flag = true,
-        text_cont = document.querySelector('.hidden-text'),
+        text_cont = document.querySelector('.hidden-text-container'),
         text = more.querySelector('span');
 
     more.addEventListener("click", show_info);
-
 
     function show_info(){
         if(flag){
@@ -80,3 +79,18 @@ if(more){
 
 if(open_nav_btn) open_nav_btn.addEventListener("click", () => {nav.classList.add('open')});
 if(close_nav_btn) close_nav_btn.addEventListener("click", () => {nav.classList.remove('open')});
+
+function scroll_element(){
+    jQuery('.js-hidden').each(function(){
+
+        if(jQuery(this).offset().top <= jQuery(window).scrollTop() + jQuery(window).height()){
+            jQuery(this).addClass('show');
+        }else {
+            //Действия, когда элемент вне области видимости
+        }
+    });
+}
+
+jQuery(window).scroll(function(){
+    scroll_element();
+});

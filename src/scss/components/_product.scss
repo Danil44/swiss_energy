@@ -1,9 +1,20 @@
 .product{
   margin-bottom: 20px;
+  .cont-fix{
+    position: relative;
+  }
   &-photo{
     width: 25%;
+    min-width: 250px;
     text-align: center;
     position: relative;
+    @media (max-width: $breakpoint-mobile){
+      display: flex;
+      flex-grow: 1;
+      align-items: center;
+      justify-content: center;
+      margin-top: -72px;
+    }
     .prod_cloud{
       position: absolute;
       bottom: -33%;
@@ -31,18 +42,39 @@
     left: 20px;
     transform: translateY(-50%);
     width: calc( 100% - 40px );
+    @media (max-width: $breakpoint-tablet){
+      width: calc( 100% - 20px );
+      left: 10px;
+    }
   }
   &-info{
-    background: #FFFFFF;
+    background: #FFFFFF url(../img/product_img/info_bg.png) 60% 23% no-repeat;
+    background-size: 50%;
     position: relative;
     z-index: 99;
     padding: 85px 8.2% 170px;
+    
+    @media (max-width: $breakpoint-small){
+      padding: 50px 8.2% 120px;
+    }
+    @media (max-width: $breakpoint-mobile){
+      padding: 20px 20px 20px;
+    }
     h1{
       text-transform: none;
       margin-bottom: 125px;
+      @media (max-width: $breakpoint-small){
+        margin-bottom: 60px;
+      }
+      @media (max-width: $breakpoint-mobile){
+        margin-bottom: 30px;
+      }
     }
     h2{
-      height: 52px;
+      margin-bottom: 52px;
+      @media (max-width: $breakpoint-tablet){
+        margin-bottom: 25px;
+      }
     }
   }
   &-text{
@@ -54,9 +86,17 @@
       margin-right: 8%;
       display: flex;
       flex-direction: column;
+      @media (max-width: $breakpoint-tablet){
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 100px;
+      }
     }
     .elem-list-container{
       width: 42%;
+      @media (max-width: $breakpoint-tablet){
+        width: 100%;
+      }
     }
     .separation-line{
       margin-top: 0;
@@ -66,18 +106,27 @@
       top: 0;
       left: 0;
       width: 100%;
-      &.open{
-        position: relative;
-      }
       &-container{
         position: relative;
         flex-grow: 1;
         overflow: hidden;
+        @media (max-width: $breakpoint-tablet){
+          height: 220px;
+        }
+        &.open{
+          height: auto;
+          .hidden-text{
+            position: relative;
+          }
+        }
       }
     }
     .text{
       margin-bottom: 40px;
       line-height: 1.8em;
+      @media (max-width: $breakpoint-tablet){
+        margin-bottom: 20px;
+      }
     }
     ul.marker-list{
       li{
@@ -94,6 +143,10 @@
   left: 0;
   transform: translateY(100%);
   cursor: pointer;
+  white-space: nowrap;
+  @media (max-width: $breakpoint-tablet){
+    font-size: 1.6rem;
+  }
   &.open{
     img{
       transform: rotateX(180deg);

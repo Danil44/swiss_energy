@@ -51,6 +51,7 @@
   }
   &-img{
     text-align: center;
+    width: 100%;
     @media (max-width: $breakpoint-mobile){
       text-align: left;
       width: 100%;

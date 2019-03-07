@@ -10,14 +10,16 @@
     <script>
         window.onload = function(){
             setTimeout(function(){
-                document.querySelectorAll('.js-anim-elem').forEach(function(item) {
-                    item.classList.add('active');
-                });
+                var elems = document.querySelectorAll('.js-anim-elem');
+                for(var i = 0;i < elems.length; i++){
+                    elems[i].classList.add('active');
+                }
             },100)
         }
     </script>
 </head>
 <body>
+<div class="parallax-bg"></div>
 
 <section class="main_section index">
     <header>
@@ -36,7 +38,7 @@
     <div class="slogan desktop">
         <img src="static/img/slogan.png" class="js-anim-elem" alt="slogan image">
     </div>
-    <div class="items ">
+    <div class="items ie-center-fix">
         <ul data-relative-input="true" id="parallax" class="desktop">
             <li data-depth="0.05" class="pack_left js-anim-elem"><img src="static/img/packs/activelife_mini.png" alt="activelife pack"></li>
             <li data-depth="0.1" class="pack_left js-anim-elem"><img src="static/img/packs/beautyvit_mini.png" alt="eautyvit pack"></li>
@@ -144,7 +146,7 @@
                 <a class="btn btn-white mobile"><span>Детальніше</span></a>
             </div>
         </div>
-        <div class="pack-container letter-bg letter-bg-h desktop">
+        <div class="pack-container letter-bg letter-bg-h desktop js-hidden right-shift">
             <div class="pack-img">
                 <img class="photo" src="static/img/packs/hairnail.png" alt="hairnail icon">
                 <img class="cloud-mini" src="static/img/cloud_mini.png" alt="cloud">
@@ -174,7 +176,7 @@
                 <a class="btn btn-white mobile"><span>Детальніше</span></a>
             </div>
         </div>
-        <div class="pack-container letter-bg letter-bg-m desktop">
+        <div class="pack-container letter-bg letter-bg-m desktop js-hidden left-shift">
             <div class="pack-img">
                 <img class="photo" src="static/img/packs/multivit.png" alt="hairnail icon">
                 <img class="cloud-mini" src="static/img/cloud_mini.png" alt="cloud">
@@ -204,7 +206,7 @@
                 <a class="btn btn-white mobile"><span>Детальніше</span></a>
             </div>
         </div>
-        <div class="pack-container letter-bg letter-bg-i desktop">
+        <div class="pack-container letter-bg letter-bg-i desktop js-hidden right-shift">
             <div class="pack-img">
                 <img class="photo" src="static/img/packs/immunovit.png" alt="hairnail icon">
                 <img class="cloud-mini" src="static/img/cloud_mini.png" alt="cloud">
@@ -234,7 +236,7 @@
                 <a class="btn btn-white mobile"><span>Детальніше</span></a>
             </div>
         </div>
-        <div class="pack-container letter-bg letter-bg-b desktop">
+        <div class="pack-container letter-bg letter-bg-b desktop js-hidden left-shift">
             <div class="pack-img">
                 <img class="photo" src="static/img/packs/beautyvit.png" alt="hairnail icon">
                 <img class="cloud-mini" src="static/img/cloud_mini.png" alt="cloud">
@@ -271,7 +273,7 @@
                 <a class="btn btn-white mobile"><span>Детальніше</span></a>
             </div>
         </div>
-        <div class="pack-container letter-bg letter-bg-a desktop">
+        <div class="pack-container letter-bg letter-bg-a desktop js-hidden right-shift">
             <div class="pack-img">
                 <img class="photo" src="static/img/packs/activelife.png" alt="hairnail icon">
                 <img class="cloud-mini" src="static/img/cloud_mini.png" alt="cloud">

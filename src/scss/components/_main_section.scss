@@ -13,9 +13,15 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    @media (max-width: $breakpoint-mobile){
+      justify-content: flex-start;
+    }
     header{
       position: absolute;
       z-index: 99;
+      @media (max-width: $breakpoint-mobile){
+        position: relative;
+      }
     }
   }
   .slogan{
@@ -43,7 +49,6 @@
   .items{
     position: relative;
     z-index: 10;
-    width: 94%;
     ul{
       display: flex;
       align-items: flex-end;
