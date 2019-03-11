@@ -77,8 +77,8 @@ if(more){
     }
 }
 
-if(open_nav_btn) open_nav_btn.addEventListener("click", () => {nav.classList.add('open')});
-if(close_nav_btn) close_nav_btn.addEventListener("click", () => {nav.classList.remove('open')});
+if(open_nav_btn) open_nav_btn.addEventListener("click", () => { document.querySelector('body').style.cssText = "overflow:hidden;"; nav.classList.add('open')});
+if(close_nav_btn) close_nav_btn.addEventListener("click", () => { document.querySelector('body').style.cssText = "overflow:auto;"; nav.classList.remove('open')});
 
 function scroll_element(){
     jQuery('.js-hidden').each(function(){

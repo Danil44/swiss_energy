@@ -137,9 +137,9 @@ blockquote, q {
     line-height: 0; }
     .btn-gray--company {
       width: 40%;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center;
@@ -793,7 +793,7 @@ nav {
     position: relative; }
     @media (max-width: 767px) {
       .text-block .content {
-        padding: 50px 20px 10px;
+        padding: 50px 20px 25px;
         margin-bottom: 0;
         max-height: none; } }
     .text-block .content .title {
@@ -1403,7 +1403,8 @@ a {
       justify-content: space-between;
       margin: 0 auto;
       width: 97%;
-      position: relative; }
+      position: relative;
+      pointer-events: auto !important; }
       .main_section .items ul .cloud-bg {
         position: absolute !important;
         z-index: -1;
