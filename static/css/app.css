@@ -992,7 +992,7 @@ nav {
         margin-top: -72px; } }
     .product-photo .prod_cloud {
       position: absolute;
-      bottom: -33%;
+      bottom: -15%;
       left: 50%;
       -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
