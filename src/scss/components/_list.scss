@@ -34,6 +34,7 @@ ul.marker-list {
     margin-right: 6%;
     text-align: center;
     height: 200px;
+
     @media (max-width: $breakpoint-mobile) {
       width: 100%;
       max-width: 160px;
