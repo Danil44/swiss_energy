@@ -49,6 +49,7 @@
   .items{
     position: relative;
     z-index: 10;
+    
     ul{
       display: flex;
       align-items: flex-end;
@@ -61,11 +62,12 @@
         position: absolute!important;
         z-index: -1;
         max-width: 95%;
+        width: 100%;
         animation: none;
         bottom: -56%!important;
         top: auto!important;
-        left: 50%!important;
-        transform: translate(-50%, 0)!important;
+        // left: 50%!important;
+        // transform: translate(-50%, 0)!important;
         &.active img{
           transform: translateY(0);
           opacity: 1;
