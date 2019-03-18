@@ -1,4 +1,4 @@
-ul.marker-list{
+ul.marker-list {
   margin-top: 35px;
   font: $medium 2rem $font-base;
   width: 100%;
@@ -6,173 +6,174 @@ ul.marker-list{
   flex-wrap: wrap;
   list-style: square;
   list-style-position: inside;
-  @media (max-width: $breakpoint-small){
+  @media (max-width: $breakpoint-small) {
     font-size: 1.28rem;
   }
-  li{
+  li {
     width: 50%;
     margin-bottom: 10px;
-    @media (max-width: $breakpoint-mobile){
+    @media (max-width: $breakpoint-mobile) {
       width: 100%;
     }
   }
 }
 
-.image-list{
-  li{
+.image-list {
+  li {
     display: flex;
-    @media (max-width: $breakpoint-mobile){
+    @media (max-width: $breakpoint-mobile) {
       flex-direction: column;
       margin-bottom: 25px;
-      &:last-child{
+      &:last-child {
         margin-bottom: 0;
       }
     }
   }
-  .picture{
+  .picture {
     width: 16.5%;
     margin-right: 6%;
     text-align: center;
-    @media (max-width: $breakpoint-mobile){
+    height: 200px;
+    @media (max-width: $breakpoint-mobile) {
       width: 100%;
       max-width: 160px;
       margin: 0 auto 15px;
     }
   }
-  .description{
+  .description {
     width: 77.5%;
-    @media (max-width: $breakpoint-mobile){
+    @media (max-width: $breakpoint-mobile) {
       width: 100%;
     }
-    .title{
+    .title {
       font-size: 2.4rem;
     }
   }
 }
 
-ul.buy{
+ul.buy {
   display: flex;
   flex-wrap: wrap;
   border: 2px solid #dee4e7;
 
-  li{
+  li {
     width: 25%;
     border: 2px solid #dee4e7;
     transition: filter $anim-speed;
     overflow: hidden;
     text-align: center;
-    a{
+    a {
       display: block;
       transition: transform $anim-speed;
     }
-    &:hover{
-      a{
+    &:hover {
+      a {
         transform: scale(1.1);
       }
     }
-    @media (max-width: $breakpoint-phone){
+    @media (max-width: $breakpoint-phone) {
       width: 50%;
     }
-    @media (max-width: $breakpoint-small-mb-xxs){
+    @media (max-width: $breakpoint-small-mb-xxs) {
       width: 100%;
     }
-    img{
+    img {
       width: 100%;
       max-width: 233px;
     }
   }
 }
 
-ul.address-list{
+ul.address-list {
   margin-bottom: 40px;
-  li{
+  li {
     font: $regular 2rem $font-base;
     margin-bottom: 10px;
-    &:last-child{
+    &:last-child {
       margin-bottom: 0;
     }
-    a{
+    a {
       text-decoration: underline;
     }
   }
 }
 
-.elem-list{
+.elem-list {
   font: $regular 1.8rem $font-base;
   line-height: 1.6em;
-  li{
+  li {
     display: flex;
     margin-bottom: 5px;
-    .dots{
+    .dots {
       margin: 0 33px;
       flex-grow: 1;
-      border-top: 3px dotted #ABBEC7;
+      border-top: 3px dotted #abbec7;
       height: 0;
       align-self: center;
     }
   }
-  strong{
+  strong {
     font-weight: $bold;
   }
-  @media (max-width: $breakpoint-small){
+  @media (max-width: $breakpoint-small) {
     font-size: 1.28rem;
   }
-  @media (max-width: $breakpoint-mobile){
+  @media (max-width: $breakpoint-mobile) {
     font-size: 1.2rem;
   }
 }
 
-.product-list{
+.product-list {
   position: relative;
   z-index: 9;
   display: flex;
   flex-wrap: wrap;
   margin: 20px -10px;
-  @media (max-width: $breakpoint-tiny){
+  @media (max-width: $breakpoint-tiny) {
     margin-bottom: 0;
   }
-  @media (max-width: $breakpoint-tablet){
+  @media (max-width: $breakpoint-tablet) {
     margin: 10px -5px 0;
   }
-  li{
+  li {
     width: 25%;
     display: flex;
-    .content{
+    .content {
       width: 100%;
       padding: 48px 10px;
       margin: 0 10px;
-      background: #FFFFFF;
+      background: #ffffff;
       text-align: center;
       display: flex;
       flex-direction: column;
       align-items: center;
-      @media (max-width: $breakpoint-tablet){
+      @media (max-width: $breakpoint-tablet) {
         margin: 0 5px;
       }
     }
-    @media (max-width: $breakpoint-tiny){
+    @media (max-width: $breakpoint-tiny) {
       width: 50%;
       margin-bottom: 20px;
     }
-    @media (max-width: $breakpoint-tablet){
+    @media (max-width: $breakpoint-tablet) {
       margin-bottom: 10px;
     }
-    @media (max-width: $breakpoint-phone){
+    @media (max-width: $breakpoint-phone) {
       width: 100%;
     }
-    .desc{
+    .desc {
       text-transform: uppercase;
       font: $bold 1.2rem $font-condensed;
       letter-spacing: 2px;
       margin-bottom: 6px;
     }
-    .name{
+    .name {
       font: $black 2.9rem $font-base;
       text-transform: uppercase;
       margin-bottom: 35px;
       flex-grow: 1;
     }
-    img{
+    img {
       width: 55%;
       margin-bottom: 38px;
     }
