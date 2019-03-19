@@ -25,11 +25,7 @@
   <header>
     <a href="/" class="logo"><img src="static/img/logo.png" alt="logo"/></a>
     <h1 class="desktop">Швейцарські вітаміни у нано-капсулах</h1>
-    <div class="burger open-nav">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
+    <div class="burger open-nav"><span></span> <span></span> <span></span></div>
   </header>
 
   <img
@@ -38,8 +34,8 @@
     alt=""
   />
 
-  <div class="product-photo">
-    <div class="cont-fix">
+  <div class="product-photo" id="parallax" data-relative-input="true">
+    <div class="cont-fix" data-depth="0.05">
       <img src="/static/img/packs/multivit.png" alt="product photo" />
       <img
         src="/static/img/product_img/cloud.png"
@@ -106,13 +102,12 @@
             речовини, зміцнює імунітет, захищає від бактерій і вірусів.
           </p>
           <p class="text">
-            <strong>Вітамін D3 </strong> підсилює засвоюваність кальцію,
-            сприяє збереженню структури кісток.
+            <strong>Вітамін D3 </strong> підсилює засвоюваність кальцію, сприяє
+            збереженню структури кісток.
           </p>
           <p class="text">
-            <strong>Вітамін К2 </strong> відіграє важливу роль в обміні
-            речовин в кістках і в сполучній тканині, а так само в роботі
-            кишечника.
+            <strong>Вітамін К2 </strong> відіграє важливу роль в обміні речовин
+            в кістках і в сполучній тканині, а так само в роботі кишечника.
           </p>
           <p class="text">
             <strong>Вітамін С </strong> - є потужним профілактичним вітаміном і
@@ -143,9 +138,9 @@
             різних амінокислот.
           </p>
           <p class="text">
-            <strong>Фолієва кислота </strong> бере участь в синтезі
-            амінокислот, впливає на кровосозданіе, стимулює утворення
-            еритроцитів і лейкоцитів, знижує вміст холестерину в крові.
+            <strong>Фолієва кислота </strong> бере участь в синтезі амінокислот,
+            впливає на кровосозданіе, стимулює утворення еритроцитів і
+            лейкоцитів, знижує вміст холестерину в крові.
           </p>
           <p class="text">
             <strong>Нікотинамід </strong> грає важливу роль в життєдіяльності
@@ -194,13 +189,11 @@
             <strong>Мідь </strong> відіграє важливу роль в окисно-відновних
             реакціях і захисту організму від дії вільних радикалів.
           </p>
+          <p class="text"><strong>Цинк </strong> бере участь у синтезі ДНК.</p>
           <p class="text">
-            <strong>Цинк </strong> бере участь у синтезі ДНК.
-          </p>
-          <p class="text">
-            <strong>Марганець </strong> впливає на зростання людини.
-            Необхідний для створення кісток, збереження репродуктивної функції
-            організму, метаболізму глюкози і ліпідів.
+            <strong>Марганець </strong> впливає на зростання людини. Необхідний
+            для створення кісток, збереження репродуктивної функції організму,
+            метаболізму глюкози і ліпідів.
           </p>
           <p class="text">
             <strong>Йод </strong> є складовою частиною гормонів щитовидної
@@ -214,18 +207,18 @@
             заліза в печінці.
           </p>
           <p class="text">
-            <strong>Селен </strong> захищає імунну систему, підвищуючи
-            опірність організму до різних негативних впливів, вірусам і
-            бактеріям. Запобігає утворенню вільних радикалів, які руйнують наші
-            клітини, і зменшує їх кількість в організмі. Контролює
-            життєдіяльність кожної клітини, попереджає запалення, ендокринні і
-            серцево-судинні захворювання.
+            <strong>Селен </strong> захищає імунну систему, підвищуючи опірність
+            організму до різних негативних впливів, вірусам і бактеріям.
+            Запобігає утворенню вільних радикалів, які руйнують наші клітини, і
+            зменшує їх кількість в організмі. Контролює життєдіяльність кожної
+            клітини, попереджає запалення, ендокринні і серцево-судинні
+            захворювання.
           </p>
 
           <p class="text">
-            <strong>Хром </strong> бере участь в метаболізмі глюкози,
-            позитивно впливає на процеси кровосозданія, так само бере участь в
-            процесі травлення, нормалізує вуглеводний обмін.
+            <strong>Хром </strong> бере участь в метаболізмі глюкози, позитивно
+            впливає на процеси кровосозданія, так само бере участь в процесі
+            травлення, нормалізує вуглеводний обмін.
           </p>
         </div>
       </div>
@@ -372,22 +365,24 @@
   <li>
     <div class="content">
       <p class="desc">Досконала формула краси</p>
-      <p class="name">
-        HAIR, NAIL & SKIN
-      </p>
-      <img src="/static/img/packs/hairnail.png" alt="pack photo" />
+      <p class="name">HAIR, NAIL & SKIN</p>
+      <div class="img-wrapper">
+        <img src="/static/img/packs/hairnail.png" alt="pack photo" />
+      </div>
       <div class="btn-container">
-        <a href="/hairNailSkin-product.html" class="btn btn-gray"><span>Детальніше</span></a>
+        <a href="/hairNailSkin-product.html" class="btn btn-gray"
+          ><span>Детальніше</span></a
+        >
       </div>
     </div>
   </li>
   <li>
     <div class="content">
       <p class="desc">Динамічне життя</p>
-      <p class="name">
-        Activelife
-      </p>
-      <img src="/static/img/packs/activelife.png" alt="pack photo" />
+      <p class="name">Activelife</p>
+      <div class="img-wrapper">
+        <img src="/static/img/packs/activelife.png" alt="pack photo" />
+      </div>
       <div class="btn-container">
         <a href="/active-product.html" class="btn btn-gray"
           ><span>Детальніше</span></a
@@ -398,24 +393,28 @@
   <li>
     <div class="content">
       <p class="desc">Сяйво та молодість</p>
-      <p class="name">
-        BEAUTYVIT
-      </p>
-      <img src="/static/img/packs/beautyvit.png" alt="pack photo" />
+      <p class="name">BEAUTYVIT</p>
+      <div class="img-wrapper">
+        <img src="/static/img/packs/beautyvit.png" alt="pack photo" />
+      </div>
       <div class="btn-container">
-        <a href="/beautyvit-product.html" class="btn btn-gray"><span>Детальніше</span></a>
+        <a href="/beautyvit-product.html" class="btn btn-gray"
+          ><span>Детальніше</span></a
+        >
       </div>
     </div>
   </li>
   <li>
     <div class="content">
       <p class="desc">Зміцнення імунної системи</p>
-      <p class="name">
-        IMMUNOVIT
-      </p>
-      <img src="/static/img/packs/immunovit.png" alt="pack photo" />
+      <p class="name">IMMUNOVIT</p>
+      <div class="img-wrapper">
+        <img src="/static/img/packs/immunovit.png" alt="pack photo" />
+      </div>
       <div class="btn-container">
-        <a href="/immunovit-product.html" class="btn btn-gray"><span>Детальніше</span></a>
+        <a href="/immunovit-product.html" class="btn btn-gray"
+          ><span>Детальніше</span></a
+        >
       </div>
     </div>
   </li>

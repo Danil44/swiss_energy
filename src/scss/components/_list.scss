@@ -148,6 +148,12 @@ ul.address-list {
       display: flex;
       flex-direction: column;
       align-items: center;
+
+      .img-wrapper {
+        width: 100%;
+        height: 100%;
+      }
+      
       @media (max-width: $breakpoint-tablet) {
         margin: 0 5px;
       }

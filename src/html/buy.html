@@ -1,37 +1,68 @@
 @@include("./components/top_html.html")
 
 <section class="main_section">
+  @@include("./components/run-string-bg.html")
 
-    @@include("./components/run-string-bg.html")
-
-    <header>
-        <a href="/" class="logo"><img src="static/img/logo.png" alt="logo"></a>
-        <h1 class="desktop"></h1>
-        <div class="burger open-nav">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </header>
-
-    <div class="text-block">
-        <a class="back" href="/">Назад</a>
-        <div class="content">
-            <h2 class="title">Де купити</h2>
-            <ul class="buy">
-                <li><a href="/" target="_blank"><img src="static/img/buy/anc.jpg" alt=""></a></li>
-                <li><a href="/" target="_blank"><img src="static/img/buy/koniyka.jpg" alt=""></a></li>
-                <li><a href="/" target="_blank"><img src="static/img/buy/dobrogo_dnya.jpg" alt=""></a></li>
-                <li><a href="/" target="_blank"><img src="static/img/buy/medservis.jpg" alt=""></a></li>
-                <li><a href="/" target="_blank"><img src="static/img/buy/911.jpg" alt=""></a></li>
-                <li><a href="/" target="_blank"><img src="static/img/buy/podorognic.jpg" alt=""></a></li>
-                <li><a href="/" target="_blank"><img src="static/img/buy/ne_boley.jpg" alt=""></a></li>
-                <li><a href="/" target="_blank"><img src="static/img/buy/R.jpg" alt=""></a></li>
-            </ul>
-        </div>
+  <header>
+    <a href="/" class="logo"><img src="static/img/logo.png" alt="logo"/></a>
+    <h1 class="desktop"></h1>
+    <div class="burger open-nav">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
+  </header>
 
-    @@include("./components/nav.html")
+  <div class="text-block">
+    <a class="back" href="/">Назад</a>
+    <div class="content">
+      <h2 class="title">Де купити</h2>
+      <ul class="buy">
+        <li>
+          <a href="https://www.aptekanizkihcen.ua/ru/" target="_blank"
+            ><img src="static/img/buy/anc.jpg" alt=""
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.apt.co.ua/ru/" target="_blank"
+            ><img src="static/img/buy/koniyka.jpg" alt=""
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.add.ua/" target="_blank"
+            ><img src="static/img/buy/dobrogo_dnya.jpg" alt=""
+          /></a>
+        </li>
+        <li>
+          <a href="http://med-service.com.ua/" target="_blank"
+            ><img src="static/img/buy/medservis.jpg" alt=""
+          /></a>
+        </li>
+        <li>
+          <a href="https://apteka911.com.ua/" target="_blank"
+            ><img src="static/img/buy/911.jpg" alt=""
+          /></a>
+        </li>
+        <li>
+          <a href="http://podorozhnyk.com" target="_blank"
+            ><img src="static/img/buy/podorognic.jpg" alt=""
+          /></a>
+        </li>
+        <li>
+          <a href="https://neboley.dp.ua/" target="_blank"
+            ><img src="static/img/buy/ne_boley.jpg" alt=""
+          /></a>
+        </li>
+        <li>
+          <a href="https://apteka-ruan.com.ua/" target="_blank"
+            ><img src="static/img/buy/R.jpg" alt=""
+          /></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  @@include("./components/nav.html")
 </section>
 
 @@include("./components/bottom_html.html")
