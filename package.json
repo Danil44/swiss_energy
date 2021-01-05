@@ -58,7 +58,7 @@
     "run-sequence": "^2.1.0"
   },
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "es6-promise": "^4.2.4",
     "fullpage.js": "^3.0.4",
     "gsap": "^2.0.1",
