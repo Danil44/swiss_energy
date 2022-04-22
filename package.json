@@ -60,7 +60,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "es6-promise": "^4.2.4",
-    "fullpage.js": "^3.0.4",
+    "fullpage.js": "^4.0.5",
     "gsap": "^2.0.1",
     "gulp-jquery": "^1.1.2",
     "jquery": "^3.3.1",
